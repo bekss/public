@@ -1,0 +1,376 @@
+<title>Pose Tracker Privacy Policy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap">
+
+<style>
+  :root {
+    --bg:        #F5F7FA;
+    --surface:   #FFFFFF;
+    --border:    #E2E8F0;
+    --text:      #1A202C;
+    --muted:     #718096;
+    --accent:    #2B6CB0;
+    --accent-lt: #EBF4FF;
+    --rule:      #CBD5E0;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:        #0F1117;
+      --surface:   #1A1F2E;
+      --border:    #2D3748;
+      --text:      #E2E8F0;
+      --muted:     #A0AEC0;
+      --accent:    #63B3ED;
+      --accent-lt: #1A365D;
+      --rule:      #2D3748;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg:        #0F1117;
+    --surface:   #1A1F2E;
+    --border:    #2D3748;
+    --text:      #E2E8F0;
+    --muted:     #A0AEC0;
+    --accent:    #63B3ED;
+    --accent-lt: #1A365D;
+    --rule:      #2D3748;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 15px;
+    line-height: 1.75;
+    color: var(--text);
+    background: var(--bg);
+    padding: 48px 20px 80px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 700px;
+    margin: 0 auto;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  /* Header */
+  .doc-header {
+    padding: 40px 48px 32px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .app-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 16px;
+  }
+
+  .app-label svg {
+    width: 16px;
+    height: 16px;
+    opacity: 0.9;
+  }
+
+  h1 {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: var(--text);
+    margin-bottom: 10px;
+    text-wrap: balance;
+  }
+
+  .meta {
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  /* Body */
+  .doc-body {
+    padding: 40px 48px;
+  }
+
+  .intro {
+    font-size: 15px;
+    color: var(--muted);
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 36px;
+    line-height: 1.7;
+  }
+
+  /* Sections */
+  .section {
+    margin-bottom: 40px;
+  }
+
+  .section:last-child {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .section-number {
+    color: var(--accent);
+    margin-right: 6px;
+    font-variant-numeric: tabular-nums;
+  }
+
+  p {
+    color: var(--text);
+    margin-bottom: 12px;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Permission list */
+  .perm-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 4px;
+  }
+
+  .perm-list li {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    font-size: 14px;
+  }
+
+  .perm-label {
+    flex-shrink: 0;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: var(--accent);
+    background: var(--accent-lt);
+    border-radius: 4px;
+    padding: 2px 8px;
+    margin-top: 1px;
+    white-space: nowrap;
+  }
+
+  /* Third-party table */
+  .services-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    overflow-x: auto;
+    display: block;
+  }
+
+  .services-table th {
+    text-align: left;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--rule);
+    white-space: nowrap;
+  }
+
+  .services-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+    color: var(--text);
+  }
+
+  .services-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  .services-table a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 13px;
+  }
+
+  .services-table a:hover {
+    text-decoration: underline;
+  }
+
+  /* Highlight note */
+  .note {
+    background: var(--accent-lt);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    padding: 12px 16px;
+    font-size: 14px;
+    color: var(--text);
+    margin-top: 12px;
+    line-height: 1.6;
+  }
+
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Footer */
+  .doc-footer {
+    padding: 24px 48px;
+    border-top: 1px solid var(--rule);
+    background: var(--bg);
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  .doc-footer strong {
+    color: var(--text);
+    font-weight: 600;
+  }
+
+  @media (max-width: 600px) {
+    .doc-header, .doc-body, .doc-footer {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    h1 { font-size: 22px; }
+  }
+</style>
+
+<div class="page">
+
+  <div class="doc-header">
+    <div class="app-label">
+      <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="8" cy="3" r="2" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M8 6v4M5 8l3 2 3-2M6 13l2 1.5L10 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Pose Tracker
+    </div>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last Updated: August 22, 2026</p>
+  </div>
+
+  <div class="doc-body">
+
+    <p class="intro">This Privacy Policy describes how Pose Tracker ("we", "our", or "us") collects, uses, and shares information when you use our mobile application.</p>
+
+    <div class="section">
+      <h2><span class="section-number">1.</span>Information We Collect</h2>
+      <p><strong>Media Files:</strong> Our app processes videos to perform pose estimation. Crucially, all video processing is done locally on your device. We do not upload your videos to any servers.</p>
+      <p><strong>Device Information:</strong> We may collect information about your mobile device, including the device model, operating system version, and Android Advertising ID (GAID), collected through Google services.</p>
+      <p><strong>Log and Crash Data:</strong> We use Firebase Crashlytics to collect information about app crashes and performance. This helps us fix bugs and improve stability.</p>
+      <p><strong>Usage Statistics:</strong> We use Firebase Analytics to understand how users interact with the app (e.g., which features are used most often).</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="section-number">2.</span>Advertising</h2>
+      <p>We use Google AdMob to display advertisements. AdMob may collect and use personal data (such as advertising IDs) to show personalized ads.</p>
+      <p>You can control ad personalization at any time in your <a href="https://adssettings.google.com" target="_blank">Google Account Ad Settings</a>, or through your device's advertising settings.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="section-number">3.</span>Permissions</h2>
+      <p>To function correctly, the app may request the following permissions:</p>
+      <ul class="perm-list">
+        <li>
+          <span class="perm-label">Storage</span>
+          <span>To select videos for processing and save the results to your gallery.</span>
+        </li>
+        <li>
+          <span class="perm-label">Internet</span>
+          <span>Required for displaying advertisements, sending crash reports, and loading essential app components.</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><span class="section-number">4.</span>Data Retention</h2>
+      <p>Your videos are processed entirely on-device and are never stored by us. Technical data is retained as follows:</p>
+      <p><strong>Crash reports</strong> (Firebase Crashlytics) are retained for up to 90 days. <strong>Analytics data</strong> (Firebase Analytics) is retained for 14 months by default, in accordance with Google's standard retention policy. You can request earlier deletion by contacting us at the address below.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="section-number">5.</span>Data Security</h2>
+      <p>We value your trust. Since your videos never leave your device, your personal media remains private. Technical data (crashes and analytics) is handled through secure Google infrastructure.</p>
+      <div class="note">Your video content is processed entirely on-device and is never transmitted to our servers or any third party.</div>
+    </div>
+
+    <div class="section">
+      <h2><span class="section-number">6.</span>Third-Party Services</h2>
+      <p>The app uses the following third-party services, each governed by their own Privacy Policy:</p>
+      <table class="services-table">
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Purpose</th>
+            <th>Privacy Policy</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Google Play Services</td>
+            <td>Core Android infrastructure</td>
+            <td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td>
+          </tr>
+          <tr>
+            <td>AdMob</td>
+            <td>In-app advertising</td>
+            <td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td>
+          </tr>
+          <tr>
+            <td>Firebase Analytics</td>
+            <td>Usage statistics</td>
+            <td><a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></td>
+          </tr>
+          <tr>
+            <td>Firebase Crashlytics</td>
+            <td>Crash reporting</td>
+            <td><a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2><span class="section-number">7.</span>Children's Privacy</h2>
+      <p>Our services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children. If you believe your child has provided us with personal data, please contact us so we can delete it.</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="section-number">8.</span>Changes to This Policy</h2>
+      <p>We may update our Privacy Policy from time to time. We notify you of any changes by posting the new Privacy Policy on this page.</p>
+    </div>
+
+  </div>
+
+  <div class="doc-footer">
+    <strong>Contact Us</strong><br>
+    If you have any questions or suggestions about our Privacy Policy, please contact us at <a href="mailto:onoilimited@gmail.com">onoilimited@gmail.com</a>
+  </div>
+
+</div>
